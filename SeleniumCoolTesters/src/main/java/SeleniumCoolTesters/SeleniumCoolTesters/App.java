@@ -16,6 +16,7 @@ public class App
     {
     	String exePath = Paths.get("").toAbsolutePath().toString() + File.separator + "driver" + File.separator;
     	System.setProperty("webdriver.chrome.driver", exePath + "chromedriver.exe");
+        
     	WebDriver driver = new ChromeDriver();
     	driver.get("https://www.cooltesters.com/tienda-de-cursos/selenium-con-java");
     }
